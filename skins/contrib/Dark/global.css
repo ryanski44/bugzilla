@@ -1,0 +1,325 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ *
+ * This Source Code Form is "Incompatible With Secondary Licenses", as
+ * defined by the Mozilla Public License, v. 2.0.
+ */
+
+body {
+    background: #2f2f2f;
+    font-family: Helvetica, Arial, Geneva;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#header .links, #footer {
+    background-color: #323847;
+    color: #ddd;
+}
+
+#header {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+}
+
+#header a, #footer a {
+    color: white;
+    text-decoration: none;
+}
+#header a:hover, #footer a:hover {
+    text-decoration: underline;
+}
+
+/* body */
+
+#bugzilla-body {
+    background: #1a1a1a;
+    color: white;
+    border: 1px solid #747e93;
+    padding: 10px;
+    font-size: 10pt;
+    border-radius: 5px;
+}
+
+a {
+    color: #abb0d1;
+}
+a:hover, a:visited:hover {
+    color: #c0c9fe;
+}
+a:visited {
+    color: #abb0d1;
+}
+
+input.text_input, input[type="text"], textarea, #quicksearch_main, select {
+    background-color: #1c202a;
+    color: white;
+}
+
+hr {
+  border-color: #969696;
+  border-style: dashed;
+  border-width: 1px;
+  margin-top: 10px;
+}
+
+/* edit */
+
+#bug-form td {
+    padding-top: 2px;
+}
+
+/* attachments */
+
+#attachment-list {
+    border: 2px solid #c8c8ba;
+    font-size: 9pt;
+}
+
+#attachment-list th {
+    background-color: #e6e6d8;
+    border: none;
+    border-bottom: 1px solid #c8c8ba;
+    text-align: left;
+}
+
+#attachment-list th a {
+    color: #646456;
+}
+
+#attachment-list td {
+    border: none;
+}
+
+#attachment-list-actions td {
+    border-top: 1px solid #c8c8ba;
+}
+
+/************/
+/* Comments */
+/************/
+
+#comments th {
+    font-size: 9pt;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    text-align: right;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+#comments td {
+    padding-top: 2px;
+}
+
+.reply-button a {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.bz_comment {
+    background-color: #0d0d0d;
+    margin: 1px 1px 10px 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c8c8ba;
+    padding: 5px;
+    font-size: 9pt;
+}
+
+.bz_comment_head, .bz_first_comment_head {
+    margin: 0; padding: 0;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.bz_comment_user {
+    margin-left: 0;
+}
+
+.bz_comment.bz_private {
+    background-color: #f0e8e8;
+    border-color: #f8c8ba;
+}
+
+#attachment_table th, .bz_attach_footer, .bz_time_tracking_table th,
+.dependency_tree_controls {
+    background-color: #1c202a;
+    color: white;
+}
+
+.bz_time_tracking_table input {
+    background-color: #1c202a;
+    color: white;
+}
+
+.comment_rule {
+    display: none;
+}
+
+/* footer */
+
+#footer {
+    border: 1px solid #747e93;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#footer #links-actions,
+#footer #links-edit,
+#footer #links-saved,
+#footer #links-special {
+    margin-top: 2ex;
+}
+
+#footer .links {
+    border-spacing: 30px;
+    margin-bottom: 2ex;
+}
+
+.separator {
+    color: #cccccc;
+}
+
+/* tabs */
+
+.tabbed .tabbody {
+    background: #2f2f2f;
+    padding: 1em;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 0 3px 3px 1px;
+}
+
+.tabs {
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+.tabs td {
+    background: #383838;
+    border-width: 1px;
+}
+
+.tabs td.selected {
+    background: #2f3b4d;
+    border-width: 1px 3px 0 1px;
+}
+
+.tabs td.spacer {
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+/* other */
+
+#page-index .outro {
+    clear:both;
+}
+
+/* Rules specific for printing */
+@media print {
+    #header,
+    #footer,
+    .navigation {
+        display: none;
+    }
+
+    body {
+        background-image: none;
+        background-color: #ffffff;
+    }
+
+    #bugzilla-body {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+input.required, select.required, span.required_explanation {
+    background-color: #2e2701;
+    color: #fff;
+}
+
+.active_comment_tab {
+    background: #122b0e;
+    font-weight: bold;
+}
+
+/* These classes are set by YUI. */
+.yui-calcontainer {
+    display: none;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #404D6C;
+}
+
+.yui-skin-sam .yui-calcontainer {
+    background-color: #030303;
+}
+
+.yui-skin-sam .yui-calendar .calweekdaycell {
+    color: white;
+}
+
+.yui-skin-sam .yui-calendar td.calcell.oom {
+    background-color: #343434;
+}
+
+.yui-skin-sam .yui-calendar td.calcell {
+    background-color: #1f1f1f;
+}
+
+.yui-skin-sam .yui-calendar td.calcell a {
+    color: #81b5e8;
+}
+
+.yui-skin-sam .yui-calendar td.calcell.today a {
+    background-color: black;
+}
+
+.yui-skin-sam .yui-calendar td.calcell.selected a {
+    background-color: #34404f;
+    color: white;
+}
+
+/* custom styles for inline instances of autocomplete input fields */
+.yui-skin-sam .yui-ac-input { position:static !important;
+                              vertical-align:middle !important; }
+.yui-skin-sam .yui-ac-container { left:0px !important; }
+.yui-skin-sam .yui-ac { display: inline-block; }
+#bugzilla-body .yui-ac-content {
+    max-height: 19em;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.yui-skin-sam tr.yui-dt-even {
+    background-color: #1c202a;
+}
+
+.yui-skin-sam .yui-dt th, .yui-skin-sam .yui-dt th a {
+    color: white;
+}
+
+.bz_simple_search_form input {
+    background-color: #1c202a;
+    color: white;
+}
+
+.column_header {
+    background-color: #152238;
+}
+
+.tabbody input {
+    background-color: #1c202a;
+    color: white;
+}

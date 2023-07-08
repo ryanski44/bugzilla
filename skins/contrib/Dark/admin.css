@@ -1,0 +1,29 @@
+#menu {
+    color: white;
+    background-color: #101010;
+}
+
+#menu a:link, #menu a:visited {
+    color: #fff;
+    background-color: transparent;
+}
+
+#menu a:hover, #menu a:active {
+    color: #9ae3ff;
+    background-color: transparent;
+}
+
+#menu td {
+    border: solid thin;
+    padding: 0.2em 0.5em;
+}
+
+#menu td.selected_section {
+    color: #abffab;
+    background-color: #19233c;
+}
+
+#menu td.index {
+    color: white;
+    background-color: #29183a;
+}
