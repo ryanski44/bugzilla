@@ -27,3 +27,7 @@ tr.bz_bugitem:hover {
     background-color: #1c202a;
     color: white;
 }
+
+.component_description {
+    color: #acacac;
+}
